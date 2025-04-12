@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name        = "${var.name}-sg"
+  name        = "b59-allow-all" #"${var.name}-sg"
   description = "Allow All inbound traffic"
 
   ingress {
@@ -26,6 +26,6 @@ resource "aws_security_group" "main" {
   }
 
   tags = {
-    Name = "${var.name}-sg"
+    Name = "b59-allow-all" #"${var.name}-sg"
   }
 }
