@@ -32,7 +32,7 @@ resource "null_resource" "main" {
     inline = [
       "sleep 10",
       "echo runs playbook"
-      #   "ansible-pull -U https://github.com/B59-CloudDevOps/learn-ansible.git -e env=${var.env} -e component=${var.name} expense-pull.yaml"
+      #   "ansible-pull -U https://github.com/rajeshchandran-org-b59/ansible.git -e env=${var.env} -e component=${var.name} expense-pull.yaml"
     ]
   }
 }
